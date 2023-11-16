@@ -7,12 +7,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "eu-central-1"
-  access_key = "AKIARHTOOXUH7BG6ZXQL"
-  secret_key = "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"
-}
-
 resource "aws_s3_bucket" "terraform-state" {
     bucket        = "committed-todo-app-prometheus-tf-state"
     force_destroy = true
